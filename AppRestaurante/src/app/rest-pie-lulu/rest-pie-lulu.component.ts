@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestPieLuluComponent implements OnInit {
 
-  constructor() { }
+  nombre; string;
+  constructor() {
+    this.nombre="Restaurante PieLulu";
+   }
 
   ngOnInit(): void {
   }
