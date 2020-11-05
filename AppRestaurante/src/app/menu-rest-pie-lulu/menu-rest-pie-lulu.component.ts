@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuRestPieLuluComponent implements OnInit {
 
-  constructor() { }
+  menu: string[];
+  constructor() {
+    this.menu = ['Hamburguesa', 'Lasagna', 'Pollo Asado', 'Sancocho'];
+   }
 
   ngOnInit(): void {
   }

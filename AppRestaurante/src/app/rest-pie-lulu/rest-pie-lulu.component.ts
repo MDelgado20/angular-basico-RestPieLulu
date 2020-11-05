@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-rest-pie-lulu',
@@ -7,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestPieLuluComponent implements OnInit {
 
-  nombre; string;
-  constructor() {
-    this.nombre="Restaurante PieLulu";
-   }
+  @Input() nombre: string;
+  constructor() {  
+  }
 
   ngOnInit(): void {
   }

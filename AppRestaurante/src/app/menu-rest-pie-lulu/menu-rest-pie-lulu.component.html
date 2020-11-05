@@ -1,1 +1,11 @@
-<p>menu-rest-pie-lulu works!</p>
+<div class="container content">
+    <div class="row">
+        <div class="col-ms-6">
+            <h2>Menu</h2>
+        </div>        
+    </div>
+</div>
+
+<hr style="width:100%;">
+
+<app-rest-pie-lulu *ngFor="let x of menu" [nombre]="x"></app-rest-pie-lulu>
