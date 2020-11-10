@@ -9,7 +9,7 @@ export class MenuRestPieLuluComponent implements OnInit {
 
   menu: string[];
   constructor() {
-    this.menu = ['Lasagna Gratinada de Pollo', 'Hamburguesa con Papas', 'Arroz con Leche', 'Brownies con Helado'];
+    this.menu = ['Lasagna Gratinada de Pollo - 5.50', 'Hamburguesa con Papas - 4.50', 'Arroz con Leche - 1.25', 'Brownies con Helado - 2.35'];
    }
 
   ngOnInit(): void {
