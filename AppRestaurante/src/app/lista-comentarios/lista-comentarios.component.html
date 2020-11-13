@@ -1,1 +1,45 @@
-<p>lista-comentarios works!</p>
+<div class="container content">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <span class="anchor" id="formLogin"></span>
+               
+                <!-- form card login with validation feedback -->
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0">Comentarios del Restaurante</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <h4><label for="Usuario">Usuario</label></h4>
+                                <input type="text" class="form-control" id="Usuario" placeholder="Ingresar nombre de usuario..." #user>
+                            </div>
+
+                            <div class="form-group">
+                                <h4><label for="Comentarios">Comentarios</label></h4>
+                                <input type="text" class="form-control" id="Comentarios" placeholder="Comentarios..." #comment>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" (click)="guardar(user.value, comment.value)">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+        <br>
+        <br>
+        <br>
+
+        <div class="row row-flex">
+        <app-comentarios-rest *ngFor="let comm of Comentarios" [Comentarios] = "comm"></app-comentarios-rest>
+        </div>
+
+      
+    </div>
+
+   
+  
+    
