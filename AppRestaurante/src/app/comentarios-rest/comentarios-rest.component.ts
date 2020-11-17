@@ -10,7 +10,7 @@ import { ComentariosRest } from '../models/comentarios-rest.models';
 export class ComentariosRestComponent implements OnInit {
 
   @Input() Comentarios: ComentariosRest;
-  @HostBinding('attr.class') cssClass = 'col-md';
+  @HostBinding('attr.class') cssClass = 'col-md-4';
 
   constructor() { }
 
